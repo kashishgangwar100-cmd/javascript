@@ -17,7 +17,7 @@ const JsUser = {
 }
 
 // console.log(JsUser.email)
-// console.log(JsUser["email"])
+// console.log(JsUser["email"])//must remember this type of syntax
 // console.log(JsUser["full name"])
 // console.log(JsUser.mySym) //not using as a symbol
 // console.log(typeof JsUser.mySym) 
@@ -26,16 +26,16 @@ const JsUser = {
 JsUser.email = "kashish@chatgpt.com"
 Object.freeze(JsUser) //changes dont propogate if we use this 
 JsUser.email = "kashish@tcs.com"
-console.log(JsUser);
+// console.log(JsUser);
 
 JsUser.greeting = function(){
     console.log("Hello JS user");
 }
 
 JsUser.greetingTwo = function(){
-    console.log(`Hello JS user,${this.name}`)
+    console.log(`Hello JS user,${this.name}`);
 }
-console.log(JsUser.greeting());
-console.log(JsUser.greeting);//function return back
+// console.log(JsUser.greeting);//value undefined
+console.log(JsUser.greeting());//function return back,function not get executed only refrence we get
 console.log(JsUser.greetingTwo());
 
