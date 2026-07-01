@@ -39,5 +39,36 @@ function loginUserMessage(username = "kashish"){
 // console.log(loginUserMessage("kashish");
 console.log(loginUserMessage());
 
+function calculateCartPrice(val1,val2,...num1)//this ... can be termed as rest operator as well as spread operator it depends on its use case
+{
+return num1
+}
+
+console.log(calculateCartPrice(200,400,500,2000))//val 1 = 200 va 2 = 400 and rest is in array
+
+const user = {
+    username: "kashish",
+    price: 199
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+
+// handleObject(user)
+handleObject({
+    username : "kash",
+    price: 399
+})
+
+const myNewArray = [20,400,100,600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([20,400,100,600]));
+
 
 
